@@ -15,8 +15,8 @@ Resolvi criar matrícula como entidade, apesar de achar que poderia apenas ser u
 - O professor leciona turmas, de modo que cada turma possui um único professor (1,1) e um professor pode lecionar várias turmas (1,n).
 
 Modelo Lógico
-	Aqui, criei as tabelas correspondentes às entidades: aluno, professor, matrícula, turma e curso, cada uma com os respectivos campos, tipos e restrições.
-	Na tabela Aluno temos o ID_Aluno como um inteiro e chave primária, o nome (varchar 100), CPF (char 11) e único, telefone (varchar 20) e email (varchar 100).
+Aqui, criei as tabelas correspondentes às entidades: aluno, professor, matrícula, turma e curso, cada uma com os respectivos campos, tipos e restrições.
+Na tabela Aluno temos o ID_Aluno como um inteiro e chave primária, o nome (varchar 100), CPF (char 11) e único, telefone (varchar 20) e email (varchar 100).
 Já na tabela professor, encontramos o ID_Professor (inteiro e chave primária), o nome (varchar 100),  CPF (char 11) único, telefone (varchar 20) e email (varchar 100).
 Para a tabela curso, criei os campos ID_Curso (inteiro e chave primária), nome (varchar 50) e valor (decimal 10,2).
 Na tabela turma especifiquei o ID_Turma como inteiro e chave primária, o nível (varchar 50), horário (char 11) e sala (varchar 20). Aqui também temos as chaves estrangeiras ID_Curso como um inteiro herdando de curso e ID_Professor, também inteiro e herdando de professor.
